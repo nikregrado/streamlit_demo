@@ -16,8 +16,6 @@ from langchain.document_loaders import DirectoryLoader
 
 nltk.download('averaged_perceptron_tagger')
 
-
-st.write("OPENAI_API_KEY", st.secrets['OPENAI_API_KEY'] )
 # pass your key
 
 
