@@ -1,0 +1,8 @@
+chromadb
+langchain
+openai
+streamlit
+unstructured[local-inference]
+tiktoken
+omegaconf
+Pillow
