@@ -4,7 +4,7 @@
 
 """
 import os
-import json
+import streamlit as st
 
 import nltk
 
@@ -16,9 +16,9 @@ from langchain.document_loaders import DirectoryLoader
 
 nltk.download('averaged_perceptron_tagger')
 
-with open('secrets.json', 'r') as secrets:
-    secrets = json.load(secrets)
-os.environ["OPENAI_API_KEY"] = secrets['OPENAI_API_KEY'] # pass your key
+
+st.write("OPENAI_API_KEY", st.secrets['OPENAI_API_KEY'] )
+# pass your key
 
 
 def create_loader():
